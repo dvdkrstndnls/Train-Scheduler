@@ -10,10 +10,17 @@
   <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
   <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<!-- my additional styilng here -->
+<!-- my additional styling here -->
 <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css" />
+<!-- links to firebase -->
+<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+<!-- connecting to moment.js library -->
+<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+<!-- getting jQuery -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <!-- links to my js file to get all the dynamic bits -->
-<script src="main.js"></script>
+<script src="assets/javascript/main.js"> async</script>
+
 </head>
 <body>
 
@@ -29,7 +36,7 @@
           <div class="panel-heading">Current Trains Schedule</div>
         
           <!-- Table -->
-          <table class="table">
+          <table class="table" id="tableSched">
             <thead>
               <tr>
                 <th>Train Name</th>
@@ -50,13 +57,13 @@
             <!-- Table -->
             <table class="table input-group">
                 <span class="input-group-addon" id="add-train-name"> </span>
-                <input type="text" class="form-control" placeholder="Train Name" aria-describedby="basic-addon1">
+                <input type="text" class="form-control" id= "train-name" placeholder="Train Name" aria-describedby="basic-addon1">
                 <span class="input-group-addon" id="add-destination"> </span>
-                <input type="text" class="form-control" placeholder="Destination" aria-describedby="basic-addon1">
+                <input type="text" class="form-control" id= "train-destination" placeholder="Destination" aria-describedby="basic-addon1">
                 <span class="input-group-addon" id="add-first-train-time"> </span>
-                <input type="text" class="form-control" placeholder="First Train Time (HH:mm - military time)" aria-describedby="basic-addon1">
+                <input type="text" class="form-control" id= "first-train-time" placeholder="First Train Time (HH:mm - military time)" aria-describedby="basic-addon1">
                 <span class="input-group-addon" id="add-freq"> </span>
-                <input type="text" class="form-control" placeholder="Frequency (min)" aria-describedby="basic-addon1">
+                <input type="text" class="form-control" id= "freq-min" placeholder="Frequency (min)" aria-describedby="basic-addon1">
             </table>
             <button>Submit</button>
           </div>
@@ -97,3 +104,7 @@ Frequency -- in minutes
 Code this app to calculate when the next train will arrive; this should be relative to the current time.
 Users from many different machines must be able to view same train times.
 Styling and theme are completely up to you. Get Creative! -->
+
+
+
+<!-- class notes ap3 3 use :  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script> -->

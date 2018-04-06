@@ -8,4 +8,4 @@ https://dvdkrstndnls.github.io/Train-Scheduler/
 https://dvdkrstndnls.github.io/Portfolio/
 
 ## Tools Used
-Firebase, HTML, CSS, Bootstrap, Javascript
+Firebase, HTML, CSS, Bootstrap, Javascript, jQuery
