@@ -75,13 +75,26 @@ var now = moment();
 
 	//Code this app to calculate when the next train will arrive; this should be relative to the current time.
 // here we code the following : minutes away = next arrival - now (or what is the difference between var now and var nextArrival) I THINK THIS LINE IS CORRECT
-	var minutesAway = moment().diff(moment(firstTimeConverted), "minutes");
+	var secondsAway = moment().diff(moment(firstTimeConverted), "minutes");
 
-console.log(minutesAway);
+// Time apart (remainder)
+var tRemainder = secondsAway % keyFrequencyMin;
 
+
+// Minute Until Train
+var minutesAway = keyFrequencyMin - tRemainder;
+var next = moment().add(minutesAway, 'minutes');
+console.log(next);
+var nextArrival = moment(next).format('hh:mm');
+//changes math displayed as milliseconds as seconds and rouonds to nearest minute?
+
+
+
+
+// var minutesAway = Math.floor((secondsAway / 1000) / 60);
 
 //here we define the components, in left to right order of var newRowItem
-	var newRowItem = $("<tr><td>" + snapshot.val().keyTrainName + "</td><td>" + snapshot.val().keyDestination + "</td><td>" + snapshot.val().keyFrequencyMin + "</td><td>" + (now + minutesAway)+ "</td><td>" + minutesAway + "</td></tr>");
+	var newRowItem = $("<tr><td>" + snapshot.val().keyTrainName + "</td><td>" + snapshot.val().keyDestination + "</td><td>" + snapshot.val().keyFrequencyMin + "</td><td>" + nextArrival + "</td><td>" + minutesAway + "</td></tr>");
 //here we append var newRowItem to table
 	$("#tableSched").append(newRowItem);
 
