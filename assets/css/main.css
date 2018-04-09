@@ -56,6 +56,7 @@ body {
   background-color: rgba(211, 208, 34, 0.5);
 }
 
+/* why wont this stick to bottom! */
 footer {
   margin-top: 5px;
   padding: 10px;
