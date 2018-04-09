@@ -7,11 +7,30 @@ header {
 }
 
 
-h1,h2 {
+.jumbotron{
   background-color: rgb(243, 243, 243);
-  background-image: url("https://png.pngtree.com/thumb_back/fw800/back_pic/02/50/65/89577e277ba1c60.jpg"); 
+  background-image: url("http://www.nationalgeographicexpeditions.com/assets/images/5129/hero-interior.jpg"); 
+  color: rgb(1, 46, 31);
   background-size: cover;
-  text-align: center;
+  margin: 1%;
+  border-style: double;
+  border-color: black;
+  border-radius: 7px;
+    border: 1px solid rgb(48, 4, 243);
+   
+}
+
+.panel {
+  margin: 12px;
+}
+
+h1,h2 {
+  padding: 7px;
+  background-color: rgb(243, 243, 243);
+  opacity: 0.83;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+  border-style: double;
+  border-color: black;
 }
 
 h3
@@ -25,8 +44,26 @@ p {
   color: black;
 } 
 
-.jumbotron {
-  color: black;
-  background-size: cover;
+th {
+  font-weight: bold;
+}
 
+button {
+  margin-top: 7px;
+}
+
+body {
+  background-color: rgba(211, 208, 34, 0.5);
+}
+
+footer {
+  margin-top: 5px;
+  padding: 10px;
+  text-align: center;
+  position: sticky;
+  background-color: rgba(243, 243, 243, 0.637);
+  border-style: double;
+  border-color: black;
+  border-radius: 7px;
+    border: 1px solid rgb(249, 249, 252);
 }

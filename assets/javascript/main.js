@@ -41,7 +41,7 @@ $("button").on("click", function(){
 
 
 
-database.ref().on("child_added", function(snapshot) {
+database.ref().on("child_added", function(snapshot) {  // is something wrong here? not working...
 
 	
 var now = moment();	
