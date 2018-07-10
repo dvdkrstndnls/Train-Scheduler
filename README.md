@@ -34,10 +34,10 @@ You'll want to replace my Firebase credentials (in main.js) with your own:
 ```
   // Initialize Firebase
   var config = {
-    apiKey: "AIzaSyDxA9tnWsZfl75Ms-GNgNYcHN78W9rm6Hk",
-    authDomain: "train-schedule-5efe9.firebaseapp.com",
-    databaseURL: "https://train-schedule-5efe9.firebaseio.com",
-    projectId: "train-schedule-5efe9",
+    apiKey: "YOURAPIKEYGOESHERE",
+    authDomain: "YOURDOMAIN.firebaseapp.com",
+    databaseURL: "https://YOURURL.firebaseio.com",
+    projectId: "YOUR-PROJECT-ID-12345",
     storageBucket: "",
     messagingSenderId: "71267407443"
   };
