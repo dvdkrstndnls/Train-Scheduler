@@ -12,7 +12,7 @@ header {
   background-image: url("http://www.nationalgeographicexpeditions.com/assets/images/5129/hero-interior.jpg"); 
   color: rgb(1, 46, 31);
   background-size: cover;
-  margin: 1%;
+  margin: 13px;
   border-style: double;
   border-color: black;
   border-radius: 7px;
